@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import Style from './Bing.css';
+import './Bing.css';
 
 export default class Form extends Component{
   render(){
-    console.log(this.props)
 
     return (
-      <div className="bing-container">
-        <img src="http://www.cocoroselle.com/wp-content/uploads/2013/10/Coconut-Pie-Crust.jpg" alt=""/>
+      <div className={this.props.bingContainer}>
+        <img className={this.props.bingBox} src={this.props.bingImage} alt="" onClick={() => {this.props.getBingImage(this.props.visionText)}}/>
       </div>
     );
   }

@@ -1,8 +1,9 @@
-const router              = require('express').Router();
+const bing              = require('express').Router();
 const { getBingImage }  = require('../services/bing')
 
-router.get('/', getBingImage, (req, res) => {
+bing.route('/')
+.post(getBingImage, (req, res) => {
   res.json(res.bing || []);
 })
 
-module.exports = router;
+module.exports = bing;

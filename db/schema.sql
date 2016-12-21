@@ -1,16 +1,28 @@
 BEGIN;
 
 DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS images;
+DROP TABLE IF EXISTS savedSearch;
 
 CREATE TABLE users (
-  user_id SERIAL PRIMARY KEY,
-  name VARCHAR(255),
+  user_id SERIAL,
+  username VARCHAR NOT NULL PRIMARY KEY UNIQUE,
+  password VARCHAR NOT NULL,
+  created_at TIMESTAMP DEFAULT current_timestamp
 );
 
-CREATE TABLE images (
-  images_id SERIAL PRIMARY KEY,
-  imageurl VARCHAR(255)
+CREATE TABLE savedSearch (
+  search_id SERIAL PRIMARY KEY,
+  roverUrl TEXT,
+  bingUrl TEXT,
+  visionText TEXT,
+  username VARCHAR REFERENCES users(username)
 );
 
 COMMIT;
+
+
+
+
+
+
+

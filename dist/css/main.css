@@ -1,33 +1,286 @@
 body {
-  background-color: lightgrey;
+  background-color: white;
 }
 
-.rover-container {
-  /*height: 600px;
-  width: 800px;*/
+* {
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.rover-bing-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  height: 375px;
+  text-align: center;
+}
+
+.login-container{
+  width: 175px;
+  margin: 0 auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.large-images-container {
   display: inline-block;
 }
 
-.bing-container {
-  height: 600px;
+.large-images {
+  height: 375px;
   display: inline-block;
-}
-
-.image-container {
-  width: 80vw;
-}
-
-p {
-  font-size: 30px;
-}
-
-img {
-  max-height: 100%;
   position: relative;
 }
 
-#image-container {
-  content-align: center;
+.image-container {
+  text-align: center;
+  height: 90vh;
+}
+
+.bing-container {
+  height: 373px;
+  width: 373px;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+  top: -183px;
+}
+
+.rover-container {
+  height: 375px;
+  width: 375px;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+}
+
+.crosshair-container {
+  text-align: center;
+  margin-top: 60px;
+  display: block;
+}
+
+p {
+  font-size: 15px;
+}
+
+p#username {
+  font-size: 10px;
+  display: inline;
+}
+
+.refreshImage:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.refreshImage {
+  background-color: black;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 18px;
+  height: 18px;
+}
+
+.saved-image-container {
+  height: 250px;
+  margin: 0 auto;
+}
+
+img {
+  height: 250px;
+  width: auto;
+  display: inline-block;
+}
+
+.saved-images-container{
+  height: 700px;
+}
+
+.saved-container {
+  margin: 20px auto 45px auto;
+  text-align: center;
+}
+
+.DeleteButton {
+  background-color: black;
+  width: 15px;
+  height: 15px;
+}
+
+.DeleteButton:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.saveImage:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.saveImage {
+  background-color: black;
+  margin: 0 auto;
+  height: 19px;
+  width: 19px;
+}
+
+div.userInfo {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+.userIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.boxcrosshair {
+  height: 25px;
+  width: 25px;
+  margin-top: 43%;
+  background-color: black;
+  background-size: 20px 20px;
+  transition: transform .8s ease-in-out;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 3px solid white;
+}
+
+.save-searches {
+  width: 1000px;
+  height: 25px;
+  margin: 15vh auto 0 auto;
+}
+
+.crosshair {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  background-size: 20px 20px;
+  transition: transform .8s ease-in-out;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 3px solid white;
+}
+
+.vision-button {
+  margin: 50px auto 0 auto;
+}
+
+.boxcrosshair:hover {
+  background-color: black;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.boxcrosshair {
+  height: 25px;
+  width: 25px;
+  margin-top: 43%;
+  background-color: black;
+  background-size: 20px 20px;
+  transition: transform .8s ease-in-out;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 3px solid white;
+}
+
+.boxcrosshair:hover {
+  background-color: black;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.boxcrosshair {
+  height: 25px;
+  width: 25px;
+  margin-top: 43%;
+  background-color: black;
+  background-size: 20px 20px;
+  transition: transform .8s ease-in-out;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 3px solid white;
+}
+
+.boxcrosshair:hover {
+  background-color: black;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.crosshair:hover {
+  background-color: black;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  cursor: pointer;
+  cursor: hand;
+}
+
+.userName {
+  font-size: 15px;
+}
+
+header {
+  height: 75px;
+}
+
+input {
+  color: black;
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 3px;
+  margin: 7px;
+  z-index: 2;
+  line-height: 18px;
+}
+
+.formbutton {
+  z-index: 1;
+  border: 1px solid black;
+  position: relative;
+  padding: 3px;
+  width: 55px;
+  right: -10px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  cursor: hand;
+  background-color: white;
+}
+
+.formbutton:hover {
+  border: 1px solid lightgrey;
 }
 .bing-container {
   display: inline-block;
