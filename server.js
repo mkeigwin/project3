@@ -14,8 +14,6 @@ const usersRouter   = require('./routes/api/users');
 const authRouter    = require('./routes/api/auth');
 const imagesRouter        = require('./routes/images');
 
-console.log(visionRouter);
-
 app.use(logger('dev'));
 
 app.use(express.static(path.join(__dirname, 'dist')));

@@ -1,20 +1,31 @@
 body {
-  background-color: #fafafa;
+  background-color: white;
 }
 
 * {
   font-family: 'Arial', sans-serif;
 }
 
+.app-container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.rover-bing-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  height: 375px;
+  text-align: center;
+}
+
 .login-container{
   width: 175px;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 130px;
   z-index: 2;
 }
 
@@ -80,8 +91,8 @@ p#username {
   position: absolute;
   top: 30px;
   right: 50px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 .saved-image-container {
@@ -124,14 +135,9 @@ img {
 
 .saveImage {
   background-color: black;
-  position: absolute;
-  top: 675px;
-  height: 20px;
-  width: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  margin: 0 auto;
+  height: 19px;
+  width: 19px;
 }
 
 div.userInfo {
@@ -147,44 +153,43 @@ div.userInfo {
   display: inline-block;
 }
 
+.boxcrosshair {
+  height: 25px;
+  width: 25px;
+  margin-top: 43%;
+  background-color: black;
+  background-size: 20px 20px;
+  transition: transform .8s ease-in-out;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 3px solid white;
+}
+
+.save-searches {
+  width: 1000px;
+  height: 25px;
+  margin: 15vh auto 0 auto;
+}
+
+.crosshair {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  background-size: 20px 20px;
+  transition: transform .8s ease-in-out;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 3px solid white;
+}
+
 .vision-button {
-  top: 515px;
-  font-size: 20px;
-  text-align: center;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
-.boxcrosshair {
-  height: 25px;
-  width: 25px;
-  margin-top: 43%;
-  background-color: black;
-  background-size: 20px 20px;
-  transition: transform .8s ease-in-out;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 3px solid #fafafa;
-}
-
-.crosshair {
-  height: 25px;
-  width: 25px;
-  background-color: black;
-  background-size: 20px 20px;
-  transition: transform .8s ease-in-out;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 3px solid #fafafa;
+  margin: 50px auto 0 auto;
 }
 
 .boxcrosshair:hover {
-  background-color: red;
+  background-color: black;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
   cursor: pointer;
@@ -201,23 +206,11 @@ div.userInfo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 3px solid #fafafa;
-}
-
-.crosshair {
-  height: 25px;
-  width: 25px;
-  background-color: black;
-  background-size: 20px 20px;
-  transition: transform .8s ease-in-out;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 3px solid #fafafa;
+  border: 3px solid white;
 }
 
 .boxcrosshair:hover {
-  background-color: red;
+  background-color: black;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
   cursor: pointer;
@@ -234,34 +227,17 @@ div.userInfo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 3px solid #fafafa;
-}
-
-.crosshair {
-  height: 25px;
-  width: 25px;
-  background-color: black;
-  background-size: 20px 20px;
-  transition: transform .8s ease-in-out;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 3px solid #fafafa;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  border: 3px solid white;
 }
 
 .boxcrosshair:hover {
-  background-color: red;
+  background-color: black;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
 .crosshair:hover {
-  background-color: red;
+  background-color: black;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
   cursor: pointer;

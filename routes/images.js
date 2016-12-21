@@ -1,4 +1,4 @@
-const images             = require('express').Router();
+const images = require('express').Router();
 const { saveFavorites, getFavorites, deleteImage }  = require('../models/images');
 
 

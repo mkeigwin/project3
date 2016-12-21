@@ -4,7 +4,6 @@ import SavedImagesItem from '../SavedImagesItem/SavedImagesItem.jsx';
 export default class SavedImages extends Component{
 
   renderSavedImages() {
-    console.log('saved images.............', this.props);
     return this.props.savedImages.map((result, i) =>
       <SavedImagesItem
         DeleteButton={this.props.DeleteButton}

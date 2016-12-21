@@ -11,7 +11,6 @@ function getRoverImages(req, res, next) {
  .then(r => r.json())
  .then((result) => {
    res.rover = result;
-   console.log('the fetch for rover is', result);
    next();
  })
  .catch((err) => {
